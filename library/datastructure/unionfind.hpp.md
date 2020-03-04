@@ -25,20 +25,20 @@ layout: default
 <link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: datastructure/unionfind.hpp
+# :heavy_check_mark: return the number of components <small>(datastructure/unionfind.hpp)</small>
 
 <a href="../../index.html">Back to top page</a>
 
 * category: <a href="../../index.html#8dc87745f885a4cc532acd7b15b8b5fe">datastructure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/datastructure/unionfind.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 17:30:57+09:00
+    - Last commit date: 2020-03-04 17:47:48+09:00
 
 
 
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../include.hpp.html">include.hpp</a>
+* :heavy_check_mark: <a href="../include/include.hpp.html">include/include.hpp</a>
 
 
 ## Verified with
@@ -54,7 +54,7 @@ layout: default
 #ifndef LIBRARY_UNIONFIND_HPP
 #define LIBRARY_UNIONFIND_HPP
 
-#include "../include.hpp"
+#include "../include/include.hpp"
 
 struct UnionFind {
 
@@ -96,6 +96,9 @@ struct UnionFind {
         return good;
     }
 
+    /**
+     * @brief return the number of components
+     */
     int get_connectivity() {
         set<int> s;
         for (int i = 0, n = par.size(); i < n; i++) s.insert(find(i));
@@ -116,7 +119,7 @@ struct UnionFind {
 
 
 
-#line 1 "datastructure/../include.hpp"
+#line 1 "datastructure/../include/include.hpp"
 //
 // Created by ganariya on 2020/03/04.
 //
@@ -332,6 +335,9 @@ struct UnionFind {
         return good;
     }
 
+    /**
+     * @brief return the number of components
+     */
     int get_connectivity() {
         set<int> s;
         for (int i = 0, n = par.size(); i < n; i++) s.insert(find(i));

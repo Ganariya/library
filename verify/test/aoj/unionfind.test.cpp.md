@@ -30,7 +30,7 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * <a href="{{ site.github.repository_url }}/blob/master/test/aoj/unionfind.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 17:30:57+09:00
+    - Last commit date: 2020-03-04 17:47:48+09:00
 
 
 * see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A">https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A</a>
@@ -38,8 +38,8 @@ layout: default
 
 ## Depends on
 
-* :heavy_check_mark: <a href="../../../library/datastructure/unionfind.hpp.html">datastructure/unionfind.hpp</a>
-* :heavy_check_mark: <a href="../../../library/include.hpp.html">include.hpp</a>
+* :heavy_check_mark: <a href="../../../library/datastructure/unionfind.hpp.html">return the number of components <small>(datastructure/unionfind.hpp)</small></a>
+* :heavy_check_mark: <a href="../../../library/include/include.hpp.html">include/include.hpp</a>
 
 
 ## Code
@@ -49,7 +49,7 @@ layout: default
 ```cpp
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A"
 
-#include "../../include.hpp"
+#include "../../include/include.hpp"
 #include "../../datastructure/unionfind.hpp"
 
 int main() {
@@ -76,7 +76,7 @@ int main() {
 #line 1 "test/aoj/unionfind.test.cpp"
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A"
 
-#line 1 "test/aoj/../../include.hpp"
+#line 1 "test/aoj/../../include/include.hpp"
 //
 // Created by ganariya on 2020/03/04.
 //
@@ -254,7 +254,7 @@ inline bool chmax(T1 &a, T2 b) {
 
 
 
-#line 1 "test/aoj/../../datastructure/../include.hpp"
+#line 1 "test/aoj/../../datastructure/../include/include.hpp"
 //
 // Created by ganariya on 2020/03/04.
 //
@@ -470,6 +470,9 @@ struct UnionFind {
         return good;
     }
 
+    /**
+     * @brief return the number of components
+     */
     int get_connectivity() {
         set<int> s;
         for (int i = 0, n = par.size(); i < n; i++) s.insert(find(i));

@@ -21,29 +21,29 @@ layout: default
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-balloon-js@1.1.2/jquery.balloon.min.js" integrity="sha256-ZEYs9VrgAeNuPvs15E39OsyOJaIkXEEt10fzxJ20+2I=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="../assets/js/copy-button.js"></script>
-<link rel="stylesheet" href="../assets/css/copy-button.css" />
+<script type="text/javascript" src="../../assets/js/copy-button.js"></script>
+<link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: include.hpp
+# :heavy_check_mark: include/include.hpp
 
-<a href="../index.html">Back to top page</a>
+<a href="../../index.html">Back to top page</a>
 
-* category: <a href="../index.html#5058f1af8388633f609cadb75a75dc9d">.</a>
-* <a href="{{ site.github.repository_url }}/blob/master/include.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 17:30:57+09:00
+* category: <a href="../../index.html#d436eb0fd9de10b54a828ce6435f7e81">include</a>
+* <a href="{{ site.github.repository_url }}/blob/master/include/include.hpp">View this file on GitHub</a>
+    - Last commit date: 2020-03-04 17:47:48+09:00
 
 
 
 
 ## Required by
 
-* :heavy_check_mark: <a href="datastructure/unionfind.hpp.html">datastructure/unionfind.hpp</a>
+* :heavy_check_mark: <a href="../datastructure/unionfind.hpp.html">return the number of components <small>(datastructure/unionfind.hpp)</small></a>
 
 
 ## Verified with
 
-* :heavy_check_mark: <a href="../verify/test/aoj/unionfind.test.cpp.html">test/aoj/unionfind.test.cpp</a>
+* :heavy_check_mark: <a href="../../verify/test/aoj/unionfind.test.cpp.html">test/aoj/unionfind.test.cpp</a>
 
 
 ## Code
@@ -231,7 +231,7 @@ inline bool chmax(T1 &a, T2 b) {
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "include.hpp"
+#line 1 "include/include.hpp"
 //
 // Created by ganariya on 2020/03/04.
 //
@@ -409,5 +409,5 @@ inline bool chmax(T1 &a, T2 b) {
 ```
 {% endraw %}
 
-<a href="../index.html">Back to top page</a>
+<a href="../../index.html">Back to top page</a>
 
