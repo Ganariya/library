@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named unionfind.test
+
+# Build rule for target.
+unionfind.test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 unionfind.test
+.PHONY : unionfind.test
+
+# fast build rule for target.
+unionfind.test/fast:
+	$(MAKE) -f CMakeFiles/unionfind.test.dir/build.make CMakeFiles/unionfind.test.dir/build
+.PHONY : unionfind.test/fast
+
+#=============================================================================
 # Target rules for targets named library
 
 # Build rule for target.
@@ -150,6 +163,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+test/aoj/unionfind.test.o: test/aoj/unionfind.test.cpp.o
+
+.PHONY : test/aoj/unionfind.test.o
+
+# target to build an object file
+test/aoj/unionfind.test.cpp.o:
+	$(MAKE) -f CMakeFiles/unionfind.test.dir/build.make CMakeFiles/unionfind.test.dir/test/aoj/unionfind.test.cpp.o
+.PHONY : test/aoj/unionfind.test.cpp.o
+
+test/aoj/unionfind.test.i: test/aoj/unionfind.test.cpp.i
+
+.PHONY : test/aoj/unionfind.test.i
+
+# target to preprocess a source file
+test/aoj/unionfind.test.cpp.i:
+	$(MAKE) -f CMakeFiles/unionfind.test.dir/build.make CMakeFiles/unionfind.test.dir/test/aoj/unionfind.test.cpp.i
+.PHONY : test/aoj/unionfind.test.cpp.i
+
+test/aoj/unionfind.test.s: test/aoj/unionfind.test.cpp.s
+
+.PHONY : test/aoj/unionfind.test.s
+
+# target to generate assembly for a file
+test/aoj/unionfind.test.cpp.s:
+	$(MAKE) -f CMakeFiles/unionfind.test.dir/build.make CMakeFiles/unionfind.test.dir/test/aoj/unionfind.test.cpp.s
+.PHONY : test/aoj/unionfind.test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +198,14 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... unionfind.test"
 	@echo "... library"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... test/aoj/unionfind.test.o"
+	@echo "... test/aoj/unionfind.test.i"
+	@echo "... test/aoj/unionfind.test.s"
 .PHONY : help
 
 
