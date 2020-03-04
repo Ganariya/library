@@ -31,13 +31,13 @@ layout: default
 
 * category: <a href="../../index.html#8dc87745f885a4cc532acd7b15b8b5fe">datastructure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/datastructure/unionfind.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 18:17:58+09:00
+    - Last commit date: 2020-03-04 19:44:30+09:00
 
 
 
 
 
-# this is a unionfind md
+#### this is a unionfind md
 
 ## Depends on
 
@@ -76,9 +76,6 @@ struct UnionFind {
         }
     }
 
-    /**
-  * @brief $root$\_$of(a)$：頂点$a$を含む連結成分の代表元
-  */
     int find(int x) {
         return x == par[x] ? x : par[x] = find(par[x]);
     }
@@ -319,9 +316,6 @@ struct UnionFind {
         }
     }
 
-    /**
-  * @brief $root$\_$of(a)$：頂点$a$を含む連結成分の代表元
-  */
     int find(int x) {
         return x == par[x] ? x : par[x] = find(par[x]);
     }
