@@ -39,7 +39,6 @@ layout: default
 ### .
 
 * :heavy_check_mark: <a href="library/include.hpp.html">include.hpp</a>
-* :warning: <a href="library/main.cpp.html">main.cpp</a>
 
 
 <div id="f507383bc67fd29fb283e6894c07563e"></div>
