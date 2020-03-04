@@ -3,6 +3,11 @@
 
 #include "../include/include.hpp"
 
+
+/**
+ * @file unionfind.hpp
+ * @brief UnionFindTree
+ */
 struct UnionFind {
 
     vector<int> par;
