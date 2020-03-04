@@ -20,6 +20,9 @@ struct UnionFind {
         }
     }
 
+    /**
+  * @brief $root$\_$of(a)$：頂点$a$を含む連結成分の代表元
+  */
     int find(int x) {
         return x == par[x] ? x : par[x] = find(par[x]);
     }
