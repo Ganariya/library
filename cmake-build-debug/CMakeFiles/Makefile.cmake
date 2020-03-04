@@ -53,5 +53,4 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/unionfind.test.dir/DependInfo.cmake"
-  "CMakeFiles/library.dir/DependInfo.cmake"
   )

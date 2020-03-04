@@ -123,46 +123,6 @@ unionfind.test/fast:
 	$(MAKE) -f CMakeFiles/unionfind.test.dir/build.make CMakeFiles/unionfind.test.dir/build
 .PHONY : unionfind.test/fast
 
-#=============================================================================
-# Target rules for targets named library
-
-# Build rule for target.
-library: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 library
-.PHONY : library
-
-# fast build rule for target.
-library/fast:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/build
-.PHONY : library/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/library.dir/build.make CMakeFiles/library.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 test/aoj/unionfind.test.o: test/aoj/unionfind.test.cpp.o
 
 .PHONY : test/aoj/unionfind.test.o
@@ -199,10 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... unionfind.test"
-	@echo "... library"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... test/aoj/unionfind.test.o"
 	@echo "... test/aoj/unionfind.test.i"
 	@echo "... test/aoj/unionfind.test.s"

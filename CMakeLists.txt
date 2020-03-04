@@ -3,5 +3,4 @@ project(library)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(library main.cpp)
 add_executable(unionfind.test test/aoj/unionfind.test.cpp)

@@ -1,4 +1,3 @@
 /Users/ganariya/CLION/library/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/ganariya/CLION/library/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/ganariya/CLION/library/cmake-build-debug/CMakeFiles/unionfind.test.dir
-/Users/ganariya/CLION/library/cmake-build-debug/CMakeFiles/library.dir
