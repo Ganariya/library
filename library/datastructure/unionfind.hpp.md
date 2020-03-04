@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../index.html#8dc87745f885a4cc532acd7b15b8b5fe">datastructure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/datastructure/unionfind.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 17:52:36+09:00
+    - Last commit date: 2020-03-04 17:57:54+09:00
 
 
 
@@ -54,13 +54,13 @@ layout: default
 #ifndef LIBRARY_UNIONFIND_HPP
 #define LIBRARY_UNIONFIND_HPP
 
-#include "../include/include.hpp"
-
-
 /**
  * @file unionfind.hpp
  * @brief UnionFindTree
  */
+
+#include "../include/include.hpp"
+
 struct UnionFind {
 
     vector<int> par;
@@ -102,7 +102,7 @@ struct UnionFind {
     }
 
     /**
-     * @brief return the number of components
+     * @brief $get\_connectivity()$: return the number of connectivity
      */
     int get_connectivity() {
         set<int> s;
@@ -123,6 +123,11 @@ struct UnionFind {
 #line 1 "datastructure/unionfind.hpp"
 
 
+
+/**
+ * @file unionfind.hpp
+ * @brief UnionFindTree
+ */
 
 #line 1 "datastructure/../include/include.hpp"
 //
@@ -298,13 +303,8 @@ inline bool chmax(T1 &a, T2 b) {
 
 
 #endif //LIBRARY_INCLUDE_HPP
-#line 5 "datastructure/unionfind.hpp"
+#line 10 "datastructure/unionfind.hpp"
 
-
-/**
- * @file unionfind.hpp
- * @brief UnionFindTree
- */
 struct UnionFind {
 
     vector<int> par;
@@ -346,7 +346,7 @@ struct UnionFind {
     }
 
     /**
-     * @brief return the number of components
+     * @brief $get\_connectivity()$: return the number of connectivity
      */
     int get_connectivity() {
         set<int> s;

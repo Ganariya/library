@@ -30,7 +30,7 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * <a href="{{ site.github.repository_url }}/blob/master/test/aoj/unionfind.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 17:52:36+09:00
+    - Last commit date: 2020-03-04 17:57:54+09:00
 
 
 * see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A">https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A</a>
@@ -254,6 +254,11 @@ inline bool chmax(T1 &a, T2 b) {
 
 
 
+/**
+ * @file unionfind.hpp
+ * @brief UnionFindTree
+ */
+
 #line 1 "test/aoj/../../datastructure/../include/include.hpp"
 //
 // Created by ganariya on 2020/03/04.
@@ -428,13 +433,8 @@ inline bool chmax(T1 &a, T2 b) {
 
 
 #endif //LIBRARY_INCLUDE_HPP
-#line 5 "test/aoj/../../datastructure/unionfind.hpp"
+#line 10 "test/aoj/../../datastructure/unionfind.hpp"
 
-
-/**
- * @file unionfind.hpp
- * @brief UnionFindTree
- */
 struct UnionFind {
 
     vector<int> par;
@@ -476,7 +476,7 @@ struct UnionFind {
     }
 
     /**
-     * @brief return the number of components
+     * @brief $get\_connectivity()$: return the number of connectivity
      */
     int get_connectivity() {
         set<int> s;
