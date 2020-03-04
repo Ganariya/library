@@ -38,7 +38,7 @@ layout: default
 
 ## Required by
 
-* :heavy_check_mark: <a href="../datastructure/unionfind.hpp.html">return the number of components <small>(datastructure/unionfind.hpp)</small></a>
+* :heavy_check_mark: <a href="../datastructure/unionfind.hpp.html">UnionFindTree <small>(datastructure/unionfind.hpp)</small></a>
 
 
 ## Verified with

@@ -25,13 +25,13 @@ layout: default
 <link rel="stylesheet" href="../../assets/css/copy-button.css" />
 
 
-# :heavy_check_mark: return the number of components <small>(datastructure/unionfind.hpp)</small>
+# :heavy_check_mark: UnionFindTree <small>(datastructure/unionfind.hpp)</small>
 
 <a href="../../index.html">Back to top page</a>
 
 * category: <a href="../../index.html#8dc87745f885a4cc532acd7b15b8b5fe">datastructure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/datastructure/unionfind.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 17:47:48+09:00
+    - Last commit date: 2020-03-04 17:52:36+09:00
 
 
 
@@ -56,6 +56,11 @@ layout: default
 
 #include "../include/include.hpp"
 
+
+/**
+ * @file unionfind.hpp
+ * @brief UnionFindTree
+ */
 struct UnionFind {
 
     vector<int> par;
@@ -295,6 +300,11 @@ inline bool chmax(T1 &a, T2 b) {
 #endif //LIBRARY_INCLUDE_HPP
 #line 5 "datastructure/unionfind.hpp"
 
+
+/**
+ * @file unionfind.hpp
+ * @brief UnionFindTree
+ */
 struct UnionFind {
 
     vector<int> par;
