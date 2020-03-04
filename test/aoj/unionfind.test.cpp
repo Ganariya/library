@@ -1,6 +1,6 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A"
 
-#include "../../include.hpp"
+#include "../../include/include.hpp"
 #include "../../datastructure/unionfind.hpp"
 
 int main() {

@@ -1,7 +1,7 @@
 #ifndef LIBRARY_UNIONFIND_HPP
 #define LIBRARY_UNIONFIND_HPP
 
-#include "../include.hpp"
+#include "../include/include.hpp"
 
 struct UnionFind {
 
@@ -43,6 +43,9 @@ struct UnionFind {
         return good;
     }
 
+    /**
+     * @brief return the number of components
+     */
     int get_connectivity() {
         set<int> s;
         for (int i = 0, n = par.size(); i < n; i++) s.insert(find(i));
