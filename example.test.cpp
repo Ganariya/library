@@ -12,6 +12,7 @@ int main() {
     REP (i, n) {
         cin >> s[i];
     }
+    
     int q; cin >> q;
     int cnt = 0;
     while (q --) {
