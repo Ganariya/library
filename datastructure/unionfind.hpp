@@ -1,13 +1,13 @@
 #ifndef LIBRARY_UNIONFIND_HPP
 #define LIBRARY_UNIONFIND_HPP
 
-#include "../include/include.hpp"
-
-
 /**
  * @file unionfind.hpp
  * @brief UnionFindTree
  */
+
+#include "../include/include.hpp"
+
 struct UnionFind {
 
     vector<int> par;
@@ -49,7 +49,7 @@ struct UnionFind {
     }
 
     /**
-     * @brief return the number of components
+     * @brief $get\_connectivity()$: return the number of connectivity
      */
     int get_connectivity() {
         set<int> s;
