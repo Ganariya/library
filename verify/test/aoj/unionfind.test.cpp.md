@@ -30,7 +30,7 @@ layout: default
 <a href="../../../index.html">Back to top page</a>
 
 * <a href="{{ site.github.repository_url }}/blob/master/test/aoj/unionfind.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 18:11:51+09:00
+    - Last commit date: 2020-03-04 18:17:58+09:00
 
 
 * see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A">https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/all/DSL_1_A</a>
@@ -255,6 +255,7 @@ inline bool chmax(T1 &a, T2 b) {
 /**
  * @file unionfind.hpp
  * @brief UnionFindTree
+ * @docs markdown/unionfind.md
  */
 
 #line 1 "test/aoj/../../datastructure/../include/include.hpp"
@@ -431,17 +432,13 @@ inline bool chmax(T1 &a, T2 b) {
 
 
 #endif //LIBRARY_INCLUDE_HPP
-#line 9 "test/aoj/../../datastructure/unionfind.hpp"
+#line 10 "test/aoj/../../datastructure/unionfind.hpp"
 
-class UnionFind {
-
-public:
+struct UnionFind {
 
     vector<int> par;
     vector<int> sizes;
-/**
-     * @brief $get\_connectivity()$: return the number of connectivity
-     */
+
     UnionFind(int n)
             : par(n), sizes(n, 1) {
         for (int i = 0; i < n; i++) {
@@ -450,14 +447,12 @@ public:
     }
 
     /**
-     * @brief $root$\_$of(a)$：頂点$a$を含む連結成分の代表元
-     */
+  * @brief $root$\_$of(a)$：頂点$a$を含む連結成分の代表元
+  */
     int find(int x) {
         return x == par[x] ? x : par[x] = find(par[x]);
     }
-/**
-     * @brief $get\_connectivity()$: return the number of connectivity
-     */
+
     bool unite(int x, int y) {
         x = find(x);
         y = find(y);
@@ -467,37 +462,26 @@ public:
         sizes[x] += sizes[y];
         return true;
     }
-/**
-     * @brief $get\_connectivity()$: return the number of connectivity
-     */
+
     bool same(int x, int y) {
         return find(x) == find(y);
     }
-/**
-     * @brief $get\_connectivity()$: return the number of connectivity
-     */
+
     int get_size(int x) {
         return sizes[find(x)];
     }
-/**
-     * @brief $get\_connectivity()$: return the number of connectivity
-     */
+
     bool all_same() {
         bool good = true;
         for (int i = 0, n = par.size(); i < n; i++) if (find(0) != find(i)) good = false;
         return good;
     }
 
-    /**
-     * @brief $get\_connectivity()$: return the number of connectivity
-     */
     int get_connectivity() {
         set<int> s;
         for (int i = 0, n = par.size(); i < n; i++) s.insert(find(i));
         return s.size();
     }
-
-private:
 
 };
 
