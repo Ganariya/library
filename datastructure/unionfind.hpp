@@ -1,5 +1,4 @@
-#ifndef LIBRARY_UNIONFIND_HPP
-#define LIBRARY_UNIONFIND_HPP
+#pragma once
 
 /**
  * @file unionfind.hpp
@@ -62,6 +61,8 @@ public:
         return s.size();
     }
 
+private:
+
 };
 
-#endif //LIBRARY_UNIONFIND_HPP
+
