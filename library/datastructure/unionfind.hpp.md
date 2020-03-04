@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../index.html#8dc87745f885a4cc532acd7b15b8b5fe">datastructure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/datastructure/unionfind.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 18:06:11+09:00
+    - Last commit date: 2020-03-04 18:11:51+09:00
 
 
 
@@ -51,8 +51,7 @@ layout: default
 <a id="unbundled"></a>
 {% raw %}
 ```cpp
-#ifndef LIBRARY_UNIONFIND_HPP
-#define LIBRARY_UNIONFIND_HPP
+#pragma once
 
 /**
  * @file unionfind.hpp
@@ -67,7 +66,9 @@ public:
 
     vector<int> par;
     vector<int> sizes;
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     UnionFind(int n)
             : par(n), sizes(n, 1) {
         for (int i = 0; i < n; i++) {
@@ -81,7 +82,9 @@ public:
     int find(int x) {
         return x == par[x] ? x : par[x] = find(par[x]);
     }
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     bool unite(int x, int y) {
         x = find(x);
         y = find(y);
@@ -91,15 +94,21 @@ public:
         sizes[x] += sizes[y];
         return true;
     }
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     bool same(int x, int y) {
         return find(x) == find(y);
     }
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     int get_size(int x) {
         return sizes[find(x)];
     }
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     bool all_same() {
         bool good = true;
         for (int i = 0, n = par.size(); i < n; i++) if (find(0) != find(i)) good = false;
@@ -115,9 +124,11 @@ public:
         return s.size();
     }
 
+private:
+
 };
 
-#endif //LIBRARY_UNIONFIND_HPP
+
 
 ```
 {% endraw %}
@@ -125,9 +136,7 @@ public:
 <a id="bundled"></a>
 {% raw %}
 ```cpp
-#line 1 "datastructure/unionfind.hpp"
-
-
+#line 2 "datastructure/unionfind.hpp"
 
 /**
  * @file unionfind.hpp
@@ -308,7 +317,7 @@ inline bool chmax(T1 &a, T2 b) {
 
 
 #endif //LIBRARY_INCLUDE_HPP
-#line 10 "datastructure/unionfind.hpp"
+#line 9 "datastructure/unionfind.hpp"
 
 class UnionFind {
 
@@ -316,7 +325,9 @@ public:
 
     vector<int> par;
     vector<int> sizes;
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     UnionFind(int n)
             : par(n), sizes(n, 1) {
         for (int i = 0; i < n; i++) {
@@ -330,7 +341,9 @@ public:
     int find(int x) {
         return x == par[x] ? x : par[x] = find(par[x]);
     }
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     bool unite(int x, int y) {
         x = find(x);
         y = find(y);
@@ -340,15 +353,21 @@ public:
         sizes[x] += sizes[y];
         return true;
     }
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     bool same(int x, int y) {
         return find(x) == find(y);
     }
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     int get_size(int x) {
         return sizes[find(x)];
     }
-
+/**
+     * @brief $get\_connectivity()$: return the number of connectivity
+     */
     bool all_same() {
         bool good = true;
         for (int i = 0, n = par.size(); i < n; i++) if (find(0) != find(i)) good = false;
@@ -363,6 +382,8 @@ public:
         for (int i = 0, n = par.size(); i < n; i++) s.insert(find(i));
         return s.size();
     }
+
+private:
 
 };
 
