@@ -8,7 +8,9 @@
 
 #include "../include/include.hpp"
 
-struct UnionFind {
+class UnionFind {
+
+public:
 
     vector<int> par;
     vector<int> sizes;
