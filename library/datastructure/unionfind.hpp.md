@@ -31,7 +31,7 @@ layout: default
 
 * category: <a href="../../index.html#8dc87745f885a4cc532acd7b15b8b5fe">datastructure</a>
 * <a href="{{ site.github.repository_url }}/blob/master/datastructure/unionfind.hpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 18:02:20+09:00
+    - Last commit date: 2020-03-04 18:06:11+09:00
 
 
 
@@ -61,7 +61,9 @@ layout: default
 
 #include "../include/include.hpp"
 
-struct UnionFind {
+class UnionFind {
+
+public:
 
     vector<int> par;
     vector<int> sizes;
@@ -308,7 +310,9 @@ inline bool chmax(T1 &a, T2 b) {
 #endif //LIBRARY_INCLUDE_HPP
 #line 10 "datastructure/unionfind.hpp"
 
-struct UnionFind {
+class UnionFind {
+
+public:
 
     vector<int> par;
     vector<int> sizes;
