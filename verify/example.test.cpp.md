@@ -30,7 +30,7 @@ layout: default
 <a href="../index.html">Back to top page</a>
 
 * <a href="{{ site.github.repository_url }}/blob/master/example.test.cpp">View this file on GitHub</a>
-    - Last commit date: 2020-03-04 13:45:51+09:00
+    - Last commit date: 2020-03-04 14:12:28+09:00
 
 
 * see: <a href="https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B">https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B</a>
@@ -55,6 +55,7 @@ int main() {
     REP (i, n) {
         cin >> s[i];
     }
+    
     int q; cin >> q;
     int cnt = 0;
     while (q --) {
@@ -86,6 +87,7 @@ int main() {
     REP (i, n) {
         cin >> s[i];
     }
+    
     int q; cin >> q;
     int cnt = 0;
     while (q --) {
